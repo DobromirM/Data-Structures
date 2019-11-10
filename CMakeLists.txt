@@ -23,7 +23,6 @@ add_subdirectory(${CMAKE_CURRENT_BINARY_DIR}/googletest-src
         ${CMAKE_CURRENT_BINARY_DIR}/googletest-build
         EXCLUDE_FROM_ALL)
 
-
 # Code coverage
 #add_compile_options(--coverage)
 #link_libraries(gcov)
