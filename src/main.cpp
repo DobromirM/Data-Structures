@@ -3,13 +3,18 @@
 
 int main() {
 
-    List<int> myList{2};
+    List<int> myList{4};
     myList[0] = 5;
+    myList[1] = 10;
+    myList[2] = 15;
+    myList[3] = 20;
 
-    List<int> temp = myList;
-    temp[0] = 1;
+    List<int>::iterator ptr = myList.begin();
 
-    std::cout << myList[0] << std::endl;
-    std::cout << temp[0] << std::endl;
+    for (int i = 0; i < 4; i++) {
+        std::cout << *ptr << std::endl;
+        ptr++;
+    }
+
     return 0;
 }

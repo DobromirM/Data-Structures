@@ -27,13 +27,36 @@ public:
 
     void reserve(int newCapacity);
 
+    int size() const;
+
+    int capacity() const;
+
+    bool isEmpty() const;
+
+    void pushBack(const T& item);
+
+    void pushBack(T&& item);
+
+    T& popBack();
+
+    T& getBack() const;
+
+    typedef T* iterator;
+    typedef const T* const_iterator;
+
+    iterator begin();
+
+    const_iterator begin() const;
+
+    iterator end();
+
+    const_iterator end() const;
+
     static const int SPARE_CAPACITY = 16;
 private:
     T* items;
-    int size;
-    int capacity;
-
-
+    int size_;
+    int capacity_;
 };
 
 
