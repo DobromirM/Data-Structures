@@ -2,7 +2,7 @@
 #define ADT_LIST_TPP
 
 #include <algorithm>
-#include "../include/ADT/List.h"
+#include "ADT/List.h"
 
 template<typename T>
 List<T>::List(int size) : size_{size}, capacity_{size + SPARE_CAPACITY}, items{nullptr} {
@@ -125,9 +125,8 @@ void List<T>::pushBack(T&& item) {
 }
 
 template<typename T>
-T& List<T>::popBack() {
+void List<T>::popBack() {
     size_ = size_ - 1;
-    return items[size_];
 }
 
 template<typename T>
@@ -154,6 +153,5 @@ template<typename T>
 typename List<T>::const_iterator List<T>::end() const {
     return &items[size()];
 }
-
 
 #endif //ADT_LIST_TPP

@@ -29,7 +29,7 @@ add_subdirectory(${CMAKE_CURRENT_BINARY_DIR}/googletest-src
 
 # Setup src
 include_directories(./src ./include)
-add_executable(ADT src/main.cpp include/ADT/List.h src/List.tpp)
+add_executable(ADT src/main.cpp include/ADT/List.h src/List.tpp include/ADT/LinkedList.h src/LinkedList.tpp)
 
 # Setup test
 add_executable(Unit_Tests test/ListTest.cpp)

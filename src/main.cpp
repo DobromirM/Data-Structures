@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../include/ADT/List.h"
+#include "ADT/List.h"
 
 int main() {
 

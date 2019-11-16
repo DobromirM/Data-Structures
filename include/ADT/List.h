@@ -37,7 +37,7 @@ public:
 
     void pushBack(T&& item);
 
-    T& popBack();
+    void popBack();
 
     T& getBack() const;
 
@@ -53,6 +53,7 @@ public:
     const_iterator end() const;
 
     static const int SPARE_CAPACITY = 16;
+
 private:
     T* items;
     int size_;
